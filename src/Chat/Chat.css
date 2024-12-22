@@ -1,0 +1,154 @@
+body {
+  overflow: hidden;
+}
+
+.msg-div {
+  width: 50%;
+  margin: 20px auto;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  /* Stack children vertically */
+  background-image: url('../assets/msg_background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.heading {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 10px; */
+  background: #e2e2e2;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow for separation */
+}
+
+.heading h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.output-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.my-msg p {
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+
+}
+
+.your-msg p {
+
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+
+}
+
+.my-msg {
+  /* box-sizing: border-box; */
+  width: 200px;
+  margin: 2px;
+  background: #ffc5c5;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.your-msg {
+  width: 200px;
+  margin: 2px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+.input-btn textarea {
+  font-size: 16px;
+  background: white;
+  outline: none;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  resize: none;
+  /* Disable manual resizing */
+  word-wrap: break-word;
+  /* Wrap long words to the next line */
+  white-space: normal;
+  /* Allow line breaks */
+  overflow-x: hidden;
+}
+
+
+.input-btn button {
+  width: 10.5%;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #e2e2e2;
+  background: rgb(248, 148, 148);
+  padding: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+
+
+}
+
+
+.container {
+  height: 400px;
+  /* Fixed height to make it scrollable */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  /* background: #f9f9f9; */
+  padding: 10px;
+  overflow-x: hidden;
+  /* border: 1px solid #ccc; */
+}
+
+.input-btn {
+  background: #e2e2e2;
+  position: sticky;
+  bottom: 0;
+  /* Stick at the bottom of msg-div */
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow for separation */
+  z-index: 10;
+  /* Ensure it stays on top */
+}
+
+.profile{
+  color:rgba(227, 141, 141, 0.484);
+}
